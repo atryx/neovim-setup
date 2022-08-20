@@ -10,6 +10,11 @@ map('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
 map('n','<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
 
 map('n', 'ff', [[:Telescope find_files]], {})
+map('n', 'fg', [[:Telescope live_grep]], {})
+map('n', 'fb', [[:Telescope buffers]], {})
+map('n', 'fh', [[:Telescope help_tags]], {})
+
+
 map('i', 'jk', '<ESC>', {noremap = true, silent = false})
 map('i', 'kj', '<ESC>', {noremap = true, silent = false})
 

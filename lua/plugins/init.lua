@@ -32,8 +32,6 @@ return require('packer').startup(function(use)
 	use { 'junegunn/gv.vim' }							-- commit history
 	use { 'windwp/nvim-autopairs' }						-- auto close brackets, etc.
 
-	use { 'neovim/nvim-lspconfig' }							-- config for nvim lsp
-
 	use { 'lewis6991/impatient.nvim' }						-- speed up startup time
 	use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"} -- treesitter, syntax highlighting
 	use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
@@ -44,4 +42,12 @@ return require('packer').startup(function(use)
 	        require("which-key").setup{}
 		end
 		}
+	use 'neovim/nvim-lspconfig'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
+	use 'hrsh7th/nvim-cmp'
+	
+	use 'onsails/lspkind.nvim'
 end)
