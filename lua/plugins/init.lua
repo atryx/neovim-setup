@@ -42,12 +42,16 @@ return require('packer').startup(function(use)
 	        require("which-key").setup{}
 		end
 		}
-	use 'neovim/nvim-lspconfig'
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'hrsh7th/cmp-buffer'
-	use 'hrsh7th/cmp-path'
-	use 'hrsh7th/cmp-cmdline'
-	use 'hrsh7th/nvim-cmp'
+	use { 'neovim/nvim-lspconfig' }
+	use { 'hrsh7th/cmp-nvim-lsp' }
+	use { 'hrsh7th/cmp-buffer' }
+	use { 'hrsh7th/cmp-path' }
+	use { 'hrsh7th/cmp-cmdline' }
+	use { 'hrsh7th/nvim-cmp' }
 	
-	use 'onsails/lspkind.nvim'
+	use { 'onsails/lspkind.nvim' }
+
+	use { 'williamboman/mason.nvim' }    
+    use { 'williamboman/mason-lspconfig.nvim' }
+	use { 'jose-elias-alvarez/null-ls.nvim' }
 end)
